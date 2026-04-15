@@ -18,3 +18,8 @@
     font-family: 'Roboto';
     src: url(/fonts/Roboto-Regular.ttf) format('truetype');
 }
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(/fonts/Pretendatd-Regular.ttf) format('truetype');
+}
