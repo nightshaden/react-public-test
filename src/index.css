@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@layer base{
+    body { @apply bg-black text-white; }
+}
+
+@font-face {
+    font-family: 'Black Han Sans';
+    src: url('/fonts/BlackHanSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto-Regular.ttf) format('truetype');
+}
