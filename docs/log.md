@@ -22,3 +22,5 @@
 - Error: 설정한 D-day는 6월 30일인데 남은 시간이 일치하지 않음(13일 남았다고 뜸)
 - dayjs.duration().days()는 0~30까지만 표기되는 것 확인
 - dayjs.duration().asDays()는 제한 없는 일 수 표기
+
+** 폰트 양식 수정 **

@@ -1,5 +1,12 @@
 @import 'tailwindcss';
 
+@theme {
+    --font-black-han: 'Black Han Sans';
+    --font-poppins: 'Poppins';
+    --font-roboto: 'Roboto';
+    --font-pretentard: 'Pretendard';
+}
+
 @layer base{
     body { @apply bg-black text-white; }
 }
