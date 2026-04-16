@@ -25,7 +25,7 @@ export default function useRemainTime() {
   const remains = dayjs.duration(remainTime);
 
   return {
-    days: remains.days(),
+    days: Math.floor(remains.asDays()),
     hours: remains.hours(),
     minutes: remains.minutes(),
     seconds: remains.seconds(),
