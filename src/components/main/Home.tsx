@@ -13,7 +13,7 @@ export default function Home() {
         서울특별시 강남구 봉은사로 619, B1층
       </span>
       <br />
-      <div className='flex text-[Pretendard] font-semibold text-[35px] text-right'>
+      <div className='flex text-[Pretendard] font-semibold text-[35px] text-right py-4'>
         <span className='px-4'>
           1부 / 3부 <br /> 2부 / 4부
         </span>
