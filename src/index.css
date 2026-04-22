@@ -8,7 +8,12 @@
 }
 
 @layer base{
-    body { @apply bg-black text-white; }
+    html { @apply bg-neutral-900 text-white font-pretentard; }
+
+    h1 { @apply text-orange-600 font-pretentard text-4xl text-center font-extrabold leading-[48.13px]; }
+
+    h2 { @apply text-3xl text-center font-poppins font-medium leading-10;}
+
 }
 
 @font-face {
