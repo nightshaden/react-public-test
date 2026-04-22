@@ -12,18 +12,18 @@ export default function Ticket() {
 
   return (
     <div className='flex flex-col items-center' px-6>
-      <span className='font-poppins text-[40px] text-[#EA5514] font-bold py-4'>CARNIVAL START IN</span>
+      <span className='font-poppins text-4xl text-[#EA5514] font-bold py-4'>CARNIVAL START IN</span>
       {/* <span>Timer</span> */}
       <div className='flex gap-x-10 py-6'>
         {dday.map((time) => (
           <div key={time.label} className='flex flex-col'>
-            <span className='font-poppins text-[72px] font-bold'>{String(time.value).padStart(2, '0')}</span>
-            <span className='font-roboto text-[18px] text-center font-semibold'>{time.label}</span>
+            <span className='font-poppins text-7xl font-bold'>{String(time.value).padStart(2, '0')}</span>
+            <span className='font-roboto text-2xl text-center font-semibold'>{time.label}</span>
           </div>
         ))}
       </div>
 
-      <button className='w-[150px] h-[51px] font-pretentard bg-[#EA5514] text-black text-[20px] font-medium m-4'>
+      <button className='w-37 h-13 font-pretentard bg-[#EA5514] text-black text-[20px] font-medium m-4'>
         티켓 구매
       </button>
     </div>
