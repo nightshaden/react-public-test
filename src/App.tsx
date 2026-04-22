@@ -1,7 +1,9 @@
 import Footer from './components/footer';
 import Header from './components/header';
 import Exhibitor from './components/main/Exhibitor';
+import Floorplan from './components/main/Floorplan';
 import Home from './components/main/Home';
+import MasterClass from './components/main/MasterClass';
 import Ticket from './components/main/Ticket';
 
 export default function App() {
@@ -12,6 +14,8 @@ export default function App() {
         <Home />
         <Ticket />
         <Exhibitor />
+        <Floorplan />
+        <MasterClass />
       </main>
       <Footer />
     </>
