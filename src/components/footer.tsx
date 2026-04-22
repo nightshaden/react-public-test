@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className='mt-20'>
       <div className='w-full flex justify-between'>
         {/* 상단부분 */}
         <div className='flex flex-col font-roboto'>
