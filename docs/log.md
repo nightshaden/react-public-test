@@ -46,3 +46,5 @@
 ## 5. MasterClass.tsx 구성
 
 - 각 사진을 먼저 between으로 양사이드로 몰아버리고 마지막에 중앙에 넣을 시간표를 챙기기
+
+### tailwindcss prettier plugin적용

@@ -1,11 +1,11 @@
-import dayjs from 'dayjs';
-import duration from 'dayjs/plugin/duration';
-import { useEffect, useState } from 'react';
+import dayjs from "dayjs";
+import duration from "dayjs/plugin/duration";
+import { useEffect, useState } from "react";
 dayjs.extend(duration);
 
 // 남은 시간 타이머
 export default function useRemainTime() {
-  const targetTime = '2026-06-30 00:00:00';
+  const targetTime = "2026-06-30 00:00:00";
   const [remainTime, setRemainTime] = useState(0);
   useEffect(() => {
     const timer = setInterval(() => {
