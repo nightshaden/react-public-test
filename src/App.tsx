@@ -8,7 +8,7 @@ import Ticket from "./components/main/Ticket";
 
 export default function App() {
   return (
-    <>
+    <div>
       <Header /> {/* 상단 고정 */}
       <main>
         <Home />
@@ -18,6 +18,6 @@ export default function App() {
         <MasterClass />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

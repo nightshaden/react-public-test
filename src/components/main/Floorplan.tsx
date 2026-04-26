@@ -1,6 +1,6 @@
 export default function Floorplan() {
   return (
-    <div className="mt-20 flex flex-col">
+    <div className="mt-20 flex max-w-480 flex-col">
       <h1>부스배치도</h1>
       <h2>FLOOR PLAN</h2>
       <img
@@ -8,7 +8,7 @@ export default function Floorplan() {
         alt=""
         className="items-center justify-center px-20 py-10"
       />
-      <div className="font-roboto mt-10 grid grid-cols-5 justify-center gap-15 px-30 py-10 text-2xl leading-8 font-bold text-nowrap">
+      <div className="font-roboto mt-10 grid grid-cols-5 justify-center gap-10 px-30 py-10 text-xl leading-8 font-bold text-nowrap">
         <div>1. 위스키내비</div>
         <div>2. 더 위스키테일즈</div>
         <div>3. 위스키 에이지</div>
