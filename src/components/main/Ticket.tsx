@@ -1,6 +1,6 @@
 import useRemainTime from "../../hooks/useRemainTime";
 
-export default function Ticket() {
+export default function Ticket({ ref }: { ref: React.Ref<HTMLElement> }) {
   // 시간을 배열로 집어넣기
   const { days, hours, minutes, seconds } = useRemainTime();
   const dday = [
@@ -11,7 +11,7 @@ export default function Ticket() {
   ];
 
   return (
-    <div className="mt-30 flex flex-col items-center">
+    <section ref={ref} className="mt-30 flex flex-col items-center">
       <span className="font-poppins py-4 text-4xl font-bold text-[#EA5514]">
         CARNIVAL START IN
       </span>
@@ -32,6 +32,6 @@ export default function Ticket() {
       <button className="font-pretentard m-4 h-13 w-37 bg-[#EA5514] text-[20px] font-medium text-black">
         <a href="https://smartstore.naver.com/whiskynavi ">티켓 구매</a>
       </button>
-    </div>
+    </section>
   );
 }

@@ -1,6 +1,6 @@
-export default function Footer() {
+export default function Footer({ ref }: { ref: React.Ref<HTMLElement> }) {
   return (
-    <footer className="mt-20">
+    <footer ref={ref} className="mt-20">
       <div className="flex w-full justify-between">
         {/* 상단부분 */}
         <div className="font-roboto flex flex-col">

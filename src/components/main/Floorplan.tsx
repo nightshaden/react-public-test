@@ -1,6 +1,6 @@
 export default function Floorplan() {
   return (
-    <div className="relative mt-20 flex w-full max-w-480 flex-col">
+    <section className="relative mt-20 flex w-full max-w-480 flex-col">
       <h1>부스배치도</h1>
       <h2>FLOOR PLAN</h2>
       <div>
@@ -46,6 +46,6 @@ export default function Floorplan() {
           </div>
         </button>
       </div>
-    </div>
+    </section>
   );
 }

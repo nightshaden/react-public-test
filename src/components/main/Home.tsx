@@ -1,6 +1,9 @@
-export default function Home() {
+export default function Home({ ref }: { ref: React.Ref<HTMLElement> }) {
   return (
-    <div className="relative flex min-h-dvh w-full flex-col items-center overflow-hidden">
+    <section
+      ref={ref}
+      className="relative flex min-h-dvh w-full flex-col items-center overflow-hidden"
+    >
       <div className="absolute inset-0 -z-10 h-full w-full">
         <img
           src="/png_layer/Cask_home.png"
@@ -31,6 +34,6 @@ export default function Home() {
           10AM ~ 2PM <br /> 3PM ~ 7PM
         </p>
       </div>
-    </div>
+    </section>
   );
 }
