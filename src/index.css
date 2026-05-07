@@ -1,37 +1,42 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-    --font-black-han: 'Black Han Sans';
-    --font-poppins: 'Poppins';
-    --font-roboto: 'Roboto';
-    --font-pretentard: 'Pretendard';
+  --font-black-han: "Black Han Sans";
+  --font-poppins: "Poppins";
+  --font-roboto: "Roboto";
+  --font-pretendard: "Pretendard";
 }
 
-@layer base{
-    html { @apply bg-neutral-900 text-white font-pretentard; }
+@layer base {
+  html {
+    @apply font-pretendard bg-neutral-900 text-white;
+  }
 
-    h1 { @apply text-orange-600 font-pretentard text-4xl text-center font-extrabold leading-[48.13px]; }
+  h1 {
+    @apply font-pretendard text-center text-4xl leading-[48.13px] font-extrabold text-orange-600;
+  }
 
-    h2 { @apply text-3xl text-center font-poppins font-medium leading-10;}
-
-}
-
-@font-face {
-    font-family: 'Black Han Sans';
-    src: url('/fonts/BlackHanSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  h2 {
+    @apply font-poppins text-center text-3xl leading-10 font-medium;
+  }
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(/fonts/Roboto-Regular.ttf) format('truetype');
+  font-family: "Black Han Sans";
+  src: url("/fonts/BlackHanSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url(/fonts/Pretendatd-Regular.ttf) format('truetype');
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url(/fonts/Pretendatd-Regular.ttf) format("truetype");
 }
