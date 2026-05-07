@@ -2,7 +2,7 @@ export default function Exhibitor() {
   return (
     <section>
       {/* 항목 부분 */}
-      <div className="font-pretentard mt-20 flex flex-col items-center py-4">
+      <div className="font-pretendard mt-20 flex flex-col items-center py-4">
         <h1>참여 업체</h1>
         <h2>LINE-UP</h2>
       </div>

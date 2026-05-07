@@ -29,7 +29,7 @@ export default function Ticket({ ref }: { ref: React.Ref<HTMLElement> }) {
         ))}
       </div>
 
-      <button className="font-pretentard m-4 h-13 w-37 bg-[#EA5514] text-[20px] font-medium text-black">
+      <button className="font-pretendard m-4 h-13 w-37 bg-[#EA5514] text-[20px] font-medium text-black">
         <a href="https://smartstore.naver.com/whiskynavi ">티켓 구매</a>
       </button>
     </section>
