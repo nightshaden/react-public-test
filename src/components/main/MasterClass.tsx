@@ -288,25 +288,28 @@ export default function MasterClass({ ref }: { ref: React.Ref<HTMLElement> }) {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <hr className="w-[90%] text-orange-600" />
-      </div>
-
-      <div className="flex justify-center gap-50 py-10" id="lounge">
-        <div className="flex-col items-center text-center">
-          <div className="py-5 text-3xl leading-10 font-bold">LOUNGE A</div>
-          <img src="/png_layer/lounge_a.png" alt="" className="py-5" />
-          <div className="text-2xl leading-8 font-medium">
-            서울특별시 강남구 영동대로112길 38,
-            <br /> NCS빌딩 1층 카페촉
-          </div>
+      {/* 화면이 작으면 생략되는 부분 */}
+      <div className="hidden lg:block">
+        <div className="flex justify-center">
+          <hr className="w-[90%] text-orange-600" />
         </div>
-        <div className="flex-col items-center text-center">
-          <div className="py-5 text-3xl leading-10 font-bold">LOUNGE B</div>
-          <img src="/png_layer/lounge_b.png" alt="" className="py-5" />
-          <div className="text-2xl leading-8 font-medium">
-            서울특별시 강남구 봉은사로112길 12,
-            <br /> 1층 iL coffee
+
+        <div className="flex justify-center gap-50 py-10" id="lounge">
+          <div className="flex-col items-center text-center">
+            <div className="py-5 text-3xl leading-10 font-bold">LOUNGE A</div>
+            <img src="/png_layer/lounge_a.png" alt="" className="py-5" />
+            <div className="text-2xl leading-8 font-medium">
+              서울특별시 강남구 영동대로112길 38,
+              <br /> NCS빌딩 1층 카페촉
+            </div>
+          </div>
+          <div className="flex-col items-center text-center">
+            <div className="py-5 text-3xl leading-10 font-bold">LOUNGE B</div>
+            <img src="/png_layer/lounge_b.png" alt="" className="py-5" />
+            <div className="text-2xl leading-8 font-medium">
+              서울특별시 강남구 봉은사로112길 12,
+              <br /> 1층 iL coffee
+            </div>
           </div>
         </div>
       </div>

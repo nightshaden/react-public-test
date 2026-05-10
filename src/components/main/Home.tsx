@@ -29,28 +29,31 @@ export default function Home({ ref }: { ref: React.Ref<HTMLElement> }) {
       />
 
       {/* 메인 컨텐츠 */}
+
       <img
         src="/png_layer/CaskCarnival_Logo.png"
         alt="카니발 로고"
-        className="mt-40 h-72 w-60 opacity-100"
+        className="mt-30 h-36 w-30 opacity-100 xl:mt-40 xl:h-72 xl:w-60"
       />
-      <p className="font-poppins py-8 text-center text-5xl font-bold text-[#EA5514]">
-        CASK CARNIVAL IS COMING!
-      </p>
-      <p className="font-pretendard py-2 text-center text-3xl leading-[53.47px] font-semibold">
-        2025.11.01(토) - 02(일) <br /> JBK 컨벤션홀
-      </p>
-      <p className="font-pretendard py-2 text-center text-2xl leading-[53.47px] font-semibold text-gray-400">
-        서울특별시 강남구 봉은사로 619, B1층
-      </p>
-      <br />
-      <div className="font-pretendard flex gap-10 py-2 text-right text-4xl leading-15 font-semibold">
-        <p className="px-4">
-          1부 / 3부 <br /> 2부 / 4부
+      <div className="justify-center">
+        <p className="font-poppins py-8 text-center text-3xl font-bold text-[#EA5514] xl:text-5xl">
+          CASK CARNIVAL IS COMING!
         </p>
-        <p className="text-right">
-          10AM ~ 2PM <br /> 3PM ~ 7PM
+        <p className="font-pretendard py-2 text-center text-3xl leading-[53.47px] font-semibold">
+          2025.11.01(토) - 02(일) <br /> JBK 컨벤션홀
         </p>
+        <p className="font-pretendard py-2 text-center text-2xl leading-[53.47px] font-semibold text-gray-400">
+          서울특별시 강남구 봉은사로 619, B1층
+        </p>
+        <br />
+        <div className="font-pretendard flex gap-10 py-2 text-right text-4xl leading-15 font-semibold">
+          <p className="px-4">
+            1부 / 3부 <br /> 2부 / 4부
+          </p>
+          <p className="text-right">
+            10AM ~ 2PM <br /> 3PM ~ 7PM
+          </p>
+        </div>
       </div>
     </section>
   );
