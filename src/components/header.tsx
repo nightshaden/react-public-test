@@ -44,13 +44,31 @@ export default function Header({ navItems }: { navItems: NavItem[] }) {
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="flex h-12 w-12 items-center xl:hidden"
+          className="flex h-12 w-12 items-center justify-center text-white xl:hidden"
         >
-          <img
+          {/* <img
             src="/icons/align-right.svg"
             alt=""
             className="h-8 w-8 brightness-0 invert"
-          />
+          /> */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="feather feather-align-right"
+            aria-hidden="true"
+          >
+            <line x1="21" y1="10" x2="7" y2="10" />
+            <line x1="21" y1="6" x2="3" y2="6" />
+            <line x1="21" y1="14" x2="3" y2="14" />
+            <line x1="21" y1="18" x2="7" y2="18" />
+          </svg>
         </button>
       </div>
 
