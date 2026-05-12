@@ -22,7 +22,7 @@ export default function Footer({ ref }: { ref: React.Ref<HTMLElement> }) {
             CARNIVAL
           </span>
           <img
-            src="/png/cask_carnival_logo.png"
+            src="/png_layer/CaskCarnival_Logo.png"
             alt="Cask Carnival Logo"
             className="w-33 py-6"
           />

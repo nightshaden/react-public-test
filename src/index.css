@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --font-black-han: "Black Han Sans";
   --font-poppins: "Poppins";
