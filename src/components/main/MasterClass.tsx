@@ -39,7 +39,7 @@ export default function MasterClass({ ref }: { ref: React.Ref<HTMLElement> }) {
               id="left_3row_2box"
             >
               <div className="object-contain">
-                <img src="/png_layer/MC_Heart_Brothers.png" alt="" />
+                <img src="/png_layer/MC_Hart_Brothers.png" alt="" />
               </div>
               <div className="absolute bottom-0 w-full bg-neutral-900/80 py-2 text-center">
                 <p className="text-2xl leading-7 font-black">Mark Abram</p>
