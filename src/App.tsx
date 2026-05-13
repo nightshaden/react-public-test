@@ -42,7 +42,7 @@ export default function App() {
         </div>
         <Floorplan />
         <div className="xl:hidden">
-          <MasterClassMobile />
+          <MasterClassMobile ref={masterClassRef} />
         </div>
         <div className="hidden xl:block">
           <MasterClass ref={masterClassRef} />
