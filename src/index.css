@@ -23,6 +23,17 @@
   }
 }
 
+@layer components {
+  .carousel-btn {
+    @apply cursor-pointer rounded-lg border-none px-6 py-2.5 text-base font-semibold text-white transition-colors duration-200;
+    background-color: #7b3f00;
+
+    &:hover {
+      background-color: #f97316;
+    }
+  }
+}
+
 @font-face {
   font-family: "Black Han Sans";
   src: url("/fonts/BlackHanSans-Regular.ttf") format("truetype");
