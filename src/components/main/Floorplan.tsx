@@ -1,9 +1,9 @@
 export default function Floorplan() {
   return (
-    <section className="relative mt-20 flex w-full max-w-480 flex-col">
+    <section className="relative mx-auto mt-20 flex w-full max-w-480 flex-col">
       <h1>부스배치도</h1>
       <h2>FLOOR PLAN</h2>
-      <div className="hidden xl:flex">
+      <div className="hidden justify-center xl:flex">
         <img
           src="/png_layer/floorplan.png"
           alt=""
