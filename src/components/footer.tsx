@@ -3,24 +3,50 @@ export default function Footer({ ref }: { ref: React.Ref<HTMLElement> }) {
     <footer ref={ref} className="mt-20">
       <div className="flex w-full justify-between">
         {/* 상단부분 */}
-        <div className="font-roboto flex flex-col">
-          <h2 className="flex px-8 py-2 text-4xl">Contact</h2>
-          <div className="flex flex-row px-2 py-2">
-            <div className="flex flex-col gap-2 px-6 py-4 text-2xl">
-              <span>Intagram</span>
-              <span className="text-[#EA5514]">@caskcarnival</span>
+        <div className="font-roboto flex w-full flex-col xl:w-auto">
+          <h2 className="hidden px-8 py-2 text-4xl xl:flex">Contact</h2>
+          {/* 큰 화면 기준 왼쪽 */}
+          <div className="flex flex-col px-2 py-2 xl:flex-row">
+            <div className="flex w-full items-center justify-between pr-6 xl:w-auto xl:justify-start xl:pr-0">
+              <div className="flex flex-col gap-2 px-6 py-4 text-lg xl:text-2xl">
+                <p>Intagram</p>
+                <p className="text-[#EA5514]">@caskcarnival</p>
+              </div>
+              <div className="size-11 bg-orange-600 px-2 py-2">
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3_29)">
+                    <path
+                      d="M22.2031 29H6.79688C3.04908 29 0 25.9509 0 22.2031V6.79688C0 3.04908 3.04908 0 6.79688 0H22.2031C25.9509 0 29 3.04908 29 6.79688V22.2031C29 25.9509 25.9509 29 22.2031 29ZM6.79688 2.26562C4.29834 2.26562 2.26562 4.29834 2.26562 6.79688V22.2031C2.26562 24.7017 4.29834 26.7344 6.79688 26.7344H22.2031C24.7017 26.7344 26.7344 24.7017 26.7344 22.2031V6.79688C26.7344 4.29834 24.7017 2.26562 22.2031 2.26562H6.79688ZM22.4863 5.09766C21.7043 5.09766 21.0703 5.73163 21.0703 6.51367C21.0703 7.29571 21.7043 7.92969 22.4863 7.92969C23.2684 7.92969 23.9023 7.29571 23.9023 6.51367C23.9023 5.73163 23.2684 5.09766 22.4863 5.09766ZM14.5 21.8633C10.4398 21.8633 7.13672 18.5602 7.13672 14.5C7.54113 4.73159 21.4603 4.73442 21.8633 14.5001C21.8633 18.5602 18.5602 21.8633 14.5 21.8633ZM14.5 9.40234C11.6892 9.40234 9.40234 11.6892 9.40234 14.5C9.68237 21.2627 19.3186 21.2607 19.5977 14.4999C19.5977 11.6892 17.3108 9.40234 14.5 9.40234Z"
+                      fill="#121212"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_29">
+                      <rect width="29" height="29" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
             </div>
-            <div className="flex flex-col gap-2 px-10 py-4 text-2xl">
+
+            <div className="flex flex-col gap-2 px-6 py-2 text-lg xl:py-4 xl:text-2xl">
               <span>Email</span>
               <span className="text-[#EA5514]">lsy9785@whiskynavi.com</span>
             </div>
           </div>
         </div>
-        <div className="flex items-end">
-          <span className="font-black-han flex px-2 py-4 text-center text-4xl leading-[134%] text-[#EA5514]">
+        {/* 큰 화면 기준 오른쪽 */}
+        <div className="hidden items-end xl:flex">
+          <p className="font-black-han flex px-2 py-4 text-center text-4xl leading-[134%] text-[#EA5514]">
             CASK <br />
             CARNIVAL
-          </span>
+          </p>
           <img
             src="/png_layer/CaskCarnival_Logo.png"
             alt="Cask Carnival Logo"
@@ -28,13 +54,21 @@ export default function Footer({ ref }: { ref: React.Ref<HTMLElement> }) {
           />
         </div>
       </div>
-      <div className="font-roboto flex h-13 items-center justify-between bg-[#EA5514] px-2 py-4 text-[14px] text-white">
-        {/* 하단 부분 */}
-        <span>Copyright &copy; 2025 &middot; Whiskynavi</span>
-        <span>
+      {/* 하단 부분 - 큰화면 */}
+      <div className="font-roboto hidden items-center bg-[#EA5514] px-2 py-2 text-sm text-white xl:flex xl:justify-between">
+        <p>Copyright &copy; 2025 &middot; Whiskynavi</p>
+        <p>
           Terms & Conditions for Event &middot; Privacy Policy &middot; Terms of
           Use
-        </span>
+        </p>
+      </div>
+      {/* 하단 부분 - 작은 화면 */}
+      <div className="font-roboto flex flex-col justify-center bg-[#EA5514] px-2 py-2 text-center text-sm xl:hidden">
+        <p className="text-black">
+          Terms & Conditions for Event &middot; Privacy Policy &middot; Terms of
+          Use
+        </p>
+        <p className="">Copyright &copy; 2025 &middot; Whiskynavi</p>
       </div>
     </footer>
   );
