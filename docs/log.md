@@ -96,8 +96,17 @@
 
 => 최종적으로 slick을 사용하지 않는 방향으로 작성
 
-### MasterClass.tsx 구성
+### MasterClassMobile.tsx 구성
 
 - Exhibitor.tsx를 구성해봤기 때문에 틀 자체는 그대로 가져옴.
 - 강의의 세부 내용을 이미지 안쪽으로 추가.
 - 처음엔 indexDot을 넣을 계획이었으나, 아무래도 없는 편이 보기에 깔끔해보여서 생략함.
+
+### Floorplan.tsx 변경
+
+- 전체 도면 이미지 파일 위치 이동에 따라 info아이콘의 위치 변경.
+
+### footer.tsx 변경사항
+
+- 인스타 아이콘 svg 추가
+- 작은 화면일 때의 차이 구현

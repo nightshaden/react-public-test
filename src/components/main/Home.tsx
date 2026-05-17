@@ -46,7 +46,7 @@ export default function Home({ ref }: { ref: React.Ref<HTMLElement> }) {
           서울특별시 강남구 봉은사로 619, B1층
         </p>
         <br />
-        <div className="font-pretendard flex gap-10 py-2 text-right text-4xl leading-15 font-semibold">
+        <div className="font-pretendard flex justify-center gap-10 py-2 text-4xl leading-15 font-semibold">
           <p className="px-4">
             1부 / 3부 <br /> 2부 / 4부
           </p>
