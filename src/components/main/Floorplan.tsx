@@ -9,7 +9,7 @@ export default function Floorplan() {
           alt=""
           className="items-center justify-center px-20 py-10"
         />
-        <div className="absolute top-[44.8%] left-[59.4%] z-10">
+        <div className="absolute top-[44.75%] left-[66.25%] z-10">
           <img src="/png_layer/INFO.png" alt="" />
         </div>
       </div>
